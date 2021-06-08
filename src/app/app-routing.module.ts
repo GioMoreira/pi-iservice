@@ -12,6 +12,10 @@ const routes: Routes = [
 
   {path: 'screen1',loadChildren: () => import('./pages/screen1/screen1.module').then( m => m.Screen1PageModule)
   },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./pages/registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
 ];
 
 @NgModule({
